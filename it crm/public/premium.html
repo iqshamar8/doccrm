@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MediFlow CRM — Premium</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;800&family=IBM+Plex+Sans+Arabic:wght@400;700&display=swap');
+:root{--ink:#0b1d3a;--teal:#00796b;--paper:#f6f7f9;--card:#fff;--line:#e2e6ee;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Cairo','IBM Plex Sans Arabic',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(135deg,var(--ink) 0%,#1a2b4a 100%);color:#fff;padding:5rem 2rem;text-align:center;position:relative;overflow:hidden}
+header::after{content:"";position:absolute;bottom:-40px;left:0;right:0;height:120px;background:var(--paper);border-radius:50% 50% 0 0}
+header h1{font-weight:800;font-size:clamp(2.5rem,6vw,4rem);letter-spacing:-.03em;line-height:1.1}
+header p{opacity:.85;margin-top:1rem;font-size:1.15rem;max-width:640px;margin-left:auto;margin-right:auto}
+.container{max-width:1100px;margin:0 auto;padding:0 2rem 6rem}
+.grid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:3rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:2rem;box-shadow:0 12px 40px rgba(11,29,58,.05);transition:transform .15s ease}
+.card:hover{transform:translateY(-4px)}
+.card h3{font-weight:700;font-size:1.25rem;margin-bottom:.5rem;color:var(--teal)}
+.card p{color:#445;}
+.badge{display:inline-block;background:var(--teal);color:#fff;padding:.25rem .75rem;border-radius:999px;font-weight:600;font-size:.9rem;margin-bottom:1rem}
+footer{text-align:center;padding:3rem 2rem;color:#889;font-size:.9rem}
+</style>
+</head>
+<body>
+<header>
+<h1>MediFlow CRM <span style="color:var(--teal)">Premium</span></h1>
+<p>منصة طبية متعددة المستأجرين — إدارة العيادات، المرضى، المواعيد، واتساب الذكي، ومساعد AI مستقل لكل شركة.</p>
+</header>
+<main class="container">
+<section class="grid">
+<article class="card"><span class="badge">Phase 2</span><h3>إدارة المرضى والأطباء</h3><p>جدول مرضى معزول لكل شركة (tenant_id) — منع التكرار، أرشفة، استيراد CSV.</p></article>
+<article class="card"><span class="badge">Phase 3</span><h3>واتساب + Inbox</h3><p>Webhook آمن، صندوق محادثات موحد، تحويل AI إلى موظف، قوالب متغيرات.</p></article>
+<article class="card"><span class="badge">Phase 4</span><h3>مساعد AI مستقل</h3><p>كل شركة إعداداتها الخاصة — حجز، تعديل، إلغاء، أسئلة شائعة، لا SQL من النموذج.</p></article>
+<article class="card"><span class="badge">Phase 5</span><h3>تذكيرات آلية</h3><p>جدولة خلفية (24h / 3h / مخصص) مع idempotency وعدم الإرسال للملغاة.</p></article>
+</section>
+</main>
+<footer>© MediFlow CRM — All 7 phases complete inside <strong>it crm/</strong></footer>
+</body>
+</html>

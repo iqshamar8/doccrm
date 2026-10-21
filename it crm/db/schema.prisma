@@ -1,0 +1,23 @@
+// Phase 2 — Patients, Doctors, Appointments
+model Patient {
+  id String @id @default(uuid())
+  tenant_id String
+  patient_number String @unique
+  full_name String
+  status String
+}
+model Doctor {
+  id String @id @default(uuid())
+  tenant_id String
+  clinic_id String
+  full_name String
+}
+model Appointment {
+  id String @id @default(uuid())
+  tenant_id String
+  doctor_id String
+  patient_id String
+  start_at DateTime
+  end_at DateTime
+  status String
+}

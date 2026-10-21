@@ -1,0 +1,1 @@
+export default function AdminPage(){ return <main className="p-10"><h1>Admin</h1><p>Login via Supabase Auth. Import projects manually or via Behance (needs Client ID).</p></main>; }

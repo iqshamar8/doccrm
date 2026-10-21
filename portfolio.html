@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Portfolio — Luova</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script></head><body>
+<header><nav><a href="#" class="logo">Luova</a><div class="nav-links"><a href="#work">Work</a><a href="#video">Video</a><a href="#about">About</a><a href="#contact">Contact</a><a href="https://behance.net/luova" target="_blank">Behance</a><button onclick="toggleTheme()" aria-label="Toggle theme">◐</button></div><button onclick="toggleMobile()" aria-label="Menu">☰</button></nav></header>
+<main>
+<section class="hero" id="hero"><h1>Visuals That Make Brands Impossible to Ignore.</h1><p>Graphic designer and video editor crafting distinctive visual identities.</p><div class="cta"><a href="#work" class="btn">Explore Work</a><a href="#contact" class="btn secondary">Let's Work Together</a></div><span class="avail">Available for selected projects</span></section>
+<section id="work"><h2>Featured Work</h2><div class="filters" id="filters"></div><div class="grid" id="project-grid"></div><button onclick="showAll()">View All Projects</button></section>
+<section id="video"><h2>Video & Motion</h2><div class="video-grid"></div></section>
+<section id="about"><h2>Design With Purpose. Motion With Meaning.</h2><div class="about-body"><p>Creative director specializing in brand identity, motion, and visual systems.</p><ul><li>Brand Identity</li><li>Motion Graphics</li><li>Video Editing</li></ul></div></section>
+<section id="services"><h2>Services</h2><div class="services"></div></section>
+<section id="contact"><h2>Have a Project in Mind?</h2><form onsubmit="return submitContact(this)"><input name="name" required placeholder="Name"/><input name="email" type="email" required placeholder="Email"/><select name="service"><option>Branding</option><option>Social</option><option>Video</option></select><textarea name="message" required placeholder="Project details"></textarea><button type="submit">Send</button></form><p>Or <a href="mailto:hello@luova.design">hello@luova.design</a></p></section>
+</main>
+<footer><p>© <span id="yr"></span> Luova. <a href="https://behance.net/luova">Behance</a> · <a href="#">Instagram</a> · <a href="#">LinkedIn</a></p><button onclick="scrollToTop()">Top</button></footer>
+<div id="modal" onclick="closeModal()" style="display:none"><div onclick="event.stopPropagation()"><h3 id="m-title"></h3><img id="m-img" src="" alt=""><p id="m-desc"></p><a id="m-link" href="#" target="_blank">View on Behance →</a></div></div>
+</body></html>

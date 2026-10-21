@@ -1,0 +1,2 @@
+import { NextRequest, NextResponse } from 'next/server';
+export async function POST(req: NextRequest){ const {name,email,message} = await req.json(); return NextResponse.json({ok:true, note:"Add email service key to env and send via Resend/SendGrid."}); }
